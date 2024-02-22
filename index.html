@@ -6,6 +6,7 @@
 -> a tag <h1>: define a hieraquia maior dos titulos no corpo do texto (h1-h6).
 -> a tag <p>: cria um paragráfo.
 -> a tag <br>: faz a quebra de linha do texto.
+
 -> id: É o atributo para identificar elementos (não pode se repetir o mesmo identificador).
 -> class: É o atributo para identificar elementos (pode repetir em diversos elementos ou várias classes no 
 mesmo elemento).
@@ -13,7 +14,27 @@ mesmo elemento).
 -> o uso do #name: serve para dar estilo aos elementos com id.
 -> o uso do .name: serve para dar estilo aos elementos com classe.
 
--->
+-> Semântica é usar a tag correta, no local correto.
+-> a tag <b> = bold (Negrito) e <strong> é significado de *MAIS FORTE*.
+-> a tag <i> = italic (itálico) e a <em> é siginificado de enfâse (amoooooo).
+
+-> tag <a> é a tag que faz o link para sua página.
+- O atributo "href" indica aonde vai ser direcionado quando clicado no link.
+- Se eu quiser abrir uma janela em outra guia/tela, posso usar o elemento "_blank".
+- *Estudar mais sobre  os atributos e elementos do link!*
+
+- a tag <img src> é a tag para gerar ou  inserir imagens na tela.
+- O atributo alt é usado como descrição da imagem. Ele é obrigatório, pois ele diz resumido da imagem.
+
+- a tag <del> serve para  indicar algo que foi excluído.
+- a tag <ins> serve para indicar algo que foi adicionado.
+- a tag <s> serve  para destacar alguma palavra ou frase.
+- a tag <u> serve para sublinhar alguma coisa.
+
+- a tag <small> serve para deixar o texto menor.
+- a tag <sup> serve para colocar algo acima do texto base.
+
+--> 
 
 <!DOCTYPE html> <!-- Especifica para o navegador o tipo de documento -->
 <html lang="pt-br"> <!-- o atributo lang define o idioma da página -->
@@ -36,9 +57,12 @@ mesmo elemento).
 
         .fundo-escuro{
             background-color: rgb(73, 73, 73);
-        
         }
-    
+        
+        .img-no-texto{
+            width: 50px;
+            height: 50px;
+        }
     </style>
 
 </head>
@@ -49,10 +73,15 @@ mesmo elemento).
 
     <h1 id="cabecalho-um" class="fundo-escuro">Sobre Mim</h1>
     
-    <p>Bem-vindo à minha página web! <br><br> Sou Vitor Fontenele Viana, um entusiasta da tecnologia com 22 
+    <p> Bem-vindo à minha página web!<br><br> Sou Vitor Fontenele Viana, um entusiasta da tecnologia com 22 
         anos de idade, atualmente dedicando meu tempo ao curso de Análise e Desenvolvimento de Sistemas na 
-        Estácio, em Fortaleza, Ceará. <br> Aqui, você encontrará uma janela para minha jornada no mundo da 
+        Estácio, em Fortaleza, Ceará. Aqui, você encontrará uma janela para minha jornada no mundo da 
         programação e sistemas, bem como minhas experiências e projetos em constante evolução.
+        Caso queira entrar em contato comigo ou verificar meus projetos, pode utilizar os canais abaixo: <br><br>
+
+        <a href="https://github.com/vitor-fv" target="_blank">
+          <img class="img-no-texto" src="logo github 2.png" alt="logo github"> </a> <br>
+
     </p>
 
     <h1 id="cabecalho-dois" class="fundo-escuro"> Carreira </h1>
